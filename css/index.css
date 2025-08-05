@@ -61,13 +61,13 @@ img {
   z-index: 2;
 }
 
-.fv-mov-on {
+/* .fv-mov-on {
   position: absolute;
   bottom: 10%;
   right: 5%;
   width: 300px;
   z-index: 3;
-}
+} */
 
 /* side-cta */
 .side-cta {
