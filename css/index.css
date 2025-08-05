@@ -1,6 +1,7 @@
 body {
   font-family: "Jost", "Noto Sans JP", sans-serif;
   color: #232323;
+  letter-spacing: 160%;
   background-color: #ffffff;
 }
 
@@ -9,7 +10,61 @@ img {
   height: auto;
 }
 
-/* header-menu */
+/* top-linkbutton */
+.top-linkbutton {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.buttontext-jp {
+  font-size: 14px;
+}
+
+.buttontext-en {
+  font-size: 30px;
+}
+
+.buttontext-en::after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 15px;
+  margin-left: 32px;
+  border: 1px solid #232323;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  color: #232323;
+  line-height: 1;
+  transform: translateX(-25%) rotate(45deg);
+}
+
+/* main-content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.textarea-title {
+  margin-top: 32px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 64px;
+  line-height: 160%;
+  letter-spacing: 4%;
+}
+
+.textarea-text {
+  margin-top: 64px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 24px;
+  line-height: 180%;
+  letter-spacing: 2%;
+}
+
+/* header-menuここから */
 .header-menu {
   position: fixed;
   z-index: 999;
@@ -25,7 +80,7 @@ img {
 
 .header-menu ul {
   display: flex;
-  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 .header-menu a {
@@ -42,10 +97,10 @@ img {
   background-color: #ffffff;
 }
 
-/* fv */
+/* fvここから */
 .fv {
   position: relative;
-  width: calc(92.9% - 100px);
+  width: calc(100vw - 100px);
   max-width: 1300px;
   height: 100vh;
   right: 0;
@@ -72,7 +127,7 @@ img {
   z-index: 2;
 }
 
-/* side-cta */
+/* side-ctaここから */
 .side-cta {
   position: fixed;
   z-index: 999;
@@ -80,6 +135,7 @@ img {
   flex-direction: column;
   margin-top: 124px;
   right: 0;
+  z-index: 2;
 }
 
 .cta-order-text {
@@ -98,4 +154,31 @@ img {
   aspect-ratio: cos(30deg);
   clip-path: polygon(0 0, 100% 50%, 0 100%);
   background: #fff600;
+}
+
+.cta-instagram {
+  width: 50px;
+  height: 50px;
+  margin-top: 40px;
+}
+
+/* main-content.about-wrapここから */
+.main-content.about-wrap {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.print-white {
+  width: 310px;
+  height: 360px;
+  margin-top: 840px;
+  right: 10%;
+}
+
+.sprash_blue {
+  position: absolute;
 }
