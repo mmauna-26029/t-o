@@ -69,7 +69,7 @@ img {
 .textarea-title {
   margin-top: 32px;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 60px;
+  font-size: 57px;
   line-height: 160%;
   letter-spacing: 4%;
 }
@@ -77,7 +77,7 @@ img {
 .textarea-text {
   margin-top: 64px;
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 180%;
   letter-spacing: 2%;
 }
@@ -165,7 +165,7 @@ img {
 
 .cta-order-text {
   position: fixed;
-  display: inline-block;
+  display: block;
   max-width: 50px;
   height: 120px;
   color: #fff600;
@@ -182,7 +182,7 @@ img {
   background: #fff600;
 }
 
-.cta-instagram {
+.cta-instagram-wh {
   position: fixed;
   width: 50px;
   height: 50px;
@@ -202,8 +202,8 @@ img {
 .print-white {
   width: 310px;
   height: 360px;
-  margin-top: 840px;
-  right: 10%;
+  margin-top: 160px;
+  margin-right: 100px;
 }
 
 .sprash_blue {
