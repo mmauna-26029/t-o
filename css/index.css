@@ -25,6 +25,7 @@ img {
 
 .header-menu ul {
   display: flex;
+  align-items: flex-end;
 }
 
 .header-menu a {
@@ -47,8 +48,8 @@ img {
   width: calc(92.9% - 100px);
   max-width: 1300px;
   height: 100vh;
-  margin: 0 auto;
-  padding-left: 100px;
+  right: 0;
+  margin-left: 100px;
   box-sizing: border-box;
   overflow: hidden;
 }
