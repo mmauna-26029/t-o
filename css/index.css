@@ -47,17 +47,15 @@ img {
 .buttontext-en::before {
   content: "";
   display: none;
-  padding: 3px 5px;
   background-color: #232323;
   transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
+  transition-duration: 0.5s;
 }
 
-.buttontext-en:hover::before {
+.buttontext-en:hover::after {
   content: "";
   display: inline-block;
-  color: #ffffff;
-  transform: scaleX(15px);
+  border-bottom: #232323 1px solid;
 }
 /* main-content */
 .main-content {
@@ -148,6 +146,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  right: 50%;
   width: 200px;
   z-index: 2;
 }
@@ -158,6 +157,8 @@ img {
   z-index: 999;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 20%;
   right: 0;
 }
@@ -165,12 +166,11 @@ img {
 .cta-order-text {
   position: fixed;
   display: block;
-  max-width: 50px;
-  height: 120px;
+  padding: 25px 60px;
   color: #fff600;
   font-size: 16px;
   background-color: #777777;
-  transform: rotate(90deg);
+  transform: rotate(-90deg);
 }
 
 .cta-order-text ::before {
@@ -183,9 +183,10 @@ img {
 
 .cta-instagram-wh {
   position: fixed;
-  width: 50px;
-  height: 50px;
-  margin-top: 40px;
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-top: 80px;
 }
 
 /* main-content.about-wrapここから */
