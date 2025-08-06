@@ -58,15 +58,15 @@ img {
   border-bottom: #232323 1px solid;
 }
 /* main-content */
-.main-content {
+.content-texarea {
   display: flex;
   flex-direction: column;
   text-align: left;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .textarea-title {
   margin-top: 32px;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 57px;
   line-height: 160%;
   letter-spacing: 4%;
@@ -74,7 +74,6 @@ img {
 
 .textarea-text {
   margin-top: 64px;
-  font-family: "Noto Sans JP", sans-serif;
   font-size: 20px;
   line-height: 180%;
   letter-spacing: 2%;
@@ -137,17 +136,21 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   overflow: hidden;
   z-index: 1;
 }
 
 .fv-logo {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  right: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
+  height: 120px;
+  margin-top: 290px;
+  margin-left: auto;
+  margin-right: auto;
   z-index: 2;
 }
 
@@ -155,12 +158,12 @@ img {
 .side-cta {
   position: absolute;
   z-index: 999;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   top: 20%;
-  right: 0;
+  right: 50px;
 }
 
 .cta-order-text {
@@ -191,7 +194,9 @@ img {
 
 /* main-content.about-wrapここから */
 .print-white {
-  display: block;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
   width: 310px;
   height: 360px;
   margin-top: 160px;
@@ -200,11 +205,10 @@ img {
 
 .main-content.about-wrap {
   position: relative;
-  justify-content: center;
-  align-items: center;
   margin-top: 340px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 2;
 }
 
 .sprash_blue {
