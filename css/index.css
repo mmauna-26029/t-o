@@ -194,9 +194,7 @@ img {
 
 /* main-content.about-wrapここから */
 .print-white {
-  display: flex;
-  justify-content: right;
-  align-items: flex-end;
+  display: block;
   width: 310px;
   height: 360px;
   margin-top: 160px;
