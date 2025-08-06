@@ -166,7 +166,7 @@ img {
 
 /* side-ctaここから */
 .side-cta {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -181,21 +181,22 @@ img {
 }
 
 .cta-order-text {
-  position: fixed;
-  display: block;
-  padding: 25px 60px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #777777;
   color: #fff600;
   font-size: 16px;
-  background-color: #777777;
   transform: rotate(-90deg);
   transform-origin: center;
+  white-space: nowrap;
 }
 
-.cta-order-text::before {
+.cta-order-text::after {
   content: "";
   position: absolute;
-  left: 100%;
   top: 50%;
+  right: -18px;
   transform: translateY(-50%);
   width: 14px;
   height: 14px;
@@ -228,7 +229,14 @@ img {
 }
 
 .content-texarea.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   max-width: 504px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sprash_blue.about-textarea {
