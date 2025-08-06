@@ -58,6 +58,7 @@ img {
   transition: transform 0.3s;
   z-index: -1;
 }
+
 .buttontext-en:hover {
   color: #ffffff;
 }
@@ -67,9 +68,6 @@ img {
   transform: scale(1, 1);
 }
 
-.buttontext-en:hover::after {
-  content: "";
-}
 /* main-content */
 .content-texarea {
   display: flex;
@@ -214,9 +212,9 @@ img {
   margin-right: 100px;
 }
 
-.main-content.about-wrap {
+.main-content about-wrap {
   position: relative;
-  margin-top: 180px;
+  margin-top: 130px;
   margin-left: 427px;
   margin-right: auto;
   z-index: 2;
@@ -225,10 +223,11 @@ img {
 .sprash_blue.about-textarea {
   position: absolute;
   width: 847px;
-  margin-top: 230px;
   height: 478px;
   align-items: flex-start;
-  opacity: 0.25;
+  margin-top: 180px;
+  left: 0;
+  opacity: 0.3;
   z-index: 1;
 }
 
@@ -237,4 +236,6 @@ img {
   width: 608px;
   height: 264px;
   margin-top: 150px;
+  margin-left: 100px;
+  margin-right: auto;
 }
