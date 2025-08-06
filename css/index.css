@@ -45,7 +45,7 @@ img {
 }
 
 .buttontext-en::before {
-  background: #777777;
+  background-color: #777777;
   content: "";
   display: block;
   width: 100%;
@@ -167,14 +167,16 @@ img {
 .side-cta {
   position: absolute;
   z-index: 999;
-  display: grid;
-  grid-column: 1fr 1fr;
-  column-gap: 80px;
-  width: 50px;
-  height: 210px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 40px;
   top: 20%;
   right: 50px;
+}
+
+.cta-order {
+  position: relative;
 }
 
 .cta-order-text {
@@ -185,18 +187,22 @@ img {
   font-size: 16px;
   background-color: #777777;
   transform: rotate(-90deg);
+  transform-origin: center;
 }
 
 .cta-order-text::before {
   content: "";
-  height: 12px;
-  aspect-ratio: cos(30deg);
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
   background: #fff600;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 
 .cta-instagram-wh {
-  position: fixed;
   display: block;
   width: 45px;
   height: 45px;
@@ -212,7 +218,7 @@ img {
   margin-right: 100px;
 }
 
-.main-content about-wrap {
+.main-content.about-wrap {
   position: relative;
   margin-top: 130px;
   margin-left: 427px;
@@ -238,4 +244,36 @@ img {
   margin-top: 150px;
   margin-left: 100px;
   margin-right: auto;
+}
+
+/* main-content print-wrap */
+.main-content.print-wrap,
+.order-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  height: auto;
+  margin-top: 192px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-textarea.print,
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.pint-black {
+  display: block;
+  width: 475px;
+  height: 670px;
+  margin-left: auto;
+  margin-right: 100px;
 }
