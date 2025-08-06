@@ -148,8 +148,7 @@ img {
   width: 200px;
   height: 120px;
   top: 350px;
-  left: 50%;
-  right: 50%;
+  right: 600px;
   z-index: 2;
 }
 
@@ -177,7 +176,7 @@ img {
   transform: rotate(-90deg);
 }
 
-.cta-order-text ::before {
+.cta-order-text::before {
   content: "";
   height: 12px;
   aspect-ratio: cos(30deg);
