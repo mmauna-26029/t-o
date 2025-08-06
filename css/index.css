@@ -124,7 +124,7 @@ img {
 .fv {
   display: block;
   max-width: 100vw;
-  height: 100vh;
+  height: calc(100vh-40px);
   right: auto;
   left: auto;
   overflow: hidden;
@@ -148,9 +148,9 @@ img {
   align-items: center;
   width: 200px;
   height: 120px;
-  margin-top: 290px;
-  margin-left: auto;
-  margin-right: auto;
+  top: 350px;
+  left: 50%;
+  right: 50%;
   z-index: 2;
 }
 
