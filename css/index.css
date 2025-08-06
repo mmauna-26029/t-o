@@ -44,7 +44,7 @@ img {
   transform: translateX(-25%) rotate(45deg);
 }
 
-.buttontext-en::before {
+.buttontext-en p::before {
   background-color: #777777;
   content: "";
   display: block;
@@ -81,6 +81,7 @@ img {
   font-size: 57px;
   line-height: 160%;
   letter-spacing: 4%;
+  white-space: nowrap;
 }
 
 .textarea-text {
@@ -226,23 +227,30 @@ img {
   z-index: 2;
 }
 
+.content-texarea.about {
+  max-width: 504px;
+}
+
 .sprash_blue.about-textarea {
   position: absolute;
   width: 847px;
   height: 478px;
   align-items: flex-start;
-  margin-top: 180px;
-  left: 0;
+  top: -7%;
+  left: auto;
+  right: 50%;
   opacity: 0.3;
   z-index: 1;
 }
 
 .ink-shelf {
+  position: absolute;
   display: block;
   width: 608px;
   height: 264px;
   margin-top: 150px;
-  margin-left: 100px;
+  left: auto;
+  right: 50%;
   margin-right: auto;
 }
 
